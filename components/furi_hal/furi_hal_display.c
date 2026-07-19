@@ -34,7 +34,7 @@ static const char* TAG = "FuriHalDisplay";
 
 /* Scale the 128x64 framebuffer to the largest centered size that keeps aspect ratio. */
 #define SCALED_WIDTH  LCD_H_RES
-#define SCALED_HEIGHT LCD_V_RES
+#define SCALED_HEIGHT (LCD_V_RES * 99 / 100)
 
 /* Centering margins */
 #define MARGIN_X ((LCD_H_RES - SCALED_WIDTH) / 2)
